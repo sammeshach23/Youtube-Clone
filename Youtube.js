@@ -3,7 +3,7 @@
 let div = document.getElementById("videosResults");
 let input = document.getElementById("inputBox");
 input.addEventListener("keyup", function (event) {
-    if (event.keyCode === 13) {
+    if (event.key === 13) {
         // Number 13 is the ("Enter" key button)  on the keyboard
 
         event.preventDefault();
@@ -15,7 +15,7 @@ input.addEventListener("keyup", function (event) {
 
 let playVideo = (id) => {
     let videoDiv = document.getElementById("videosResults");
-    // videoDiv.innerHTML = null;
+    
 
     videoDiv.innerHTML = `<iframe
   width="1300"
